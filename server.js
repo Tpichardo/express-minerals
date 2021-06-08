@@ -5,8 +5,9 @@ const app = require("./app");
 // but we wont be explicitly calling it 
 require("dotenv").config();
 const PORT = process.env.PORT
+const LOGGING_ENV = "DEVELOPMENT"
 
 //Listen
 app.listen(PORT, () => {
-    console.log(`Listening on port: ${PORT}`)
+    console.log(`[${LOGGING_ENV}]Listening on port: ${PORT}`)
 })
